@@ -1,57 +1,162 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-
-    <div class="wrap">
-      
-      <header>
-        <h1><?= $page->title()->html() ?></h1>
-        <div class="intro text">
-          <?= $page->intro()->kirbytext() ?>
+<main id="content" class="white-background" role="main">
+  <div class="container">
+    <div class="inner">
+      <img src="img/sample-slide.png" width="1240" height="698" alt="">
+      <div class="margin-4"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3><?= $page->title()->html() ?></h3>
+          <div class="margin-4"></div>
         </div>
-        <hr />
-      </header>
-      
-      <div class="text">
-        <?= $page->text()->kirbytext() ?>
+        <div class="col-md-6">
+          <?= $page->intro()->html() ?>
+          <div class="margin-4"></div>
+        </div>
       </div>
-      
+
+      <div class="owl-carousel owl-services owl-red-dots">
+        <div class="service-item">
+          <h6>Advertising</h6>
+          <div class="sep red"></div>
+          <div class="margin-1"></div>
+          <p class="small">Your advertisement on the most optimal device for a better targetted audience &amp; via a global market.</p>
+          <div class="margin-5"></div>
+        </div>
+        <div class="service-item">
+          <h6>Branding</h6>
+          <div class="sep red"></div>
+          <div class="margin-1"></div>
+          <p class="small">Design is the silent embassador of your brand and when it comes to branding, we own the game.</p>
+          <div class="margin-5"></div>
+        </div>
+        <div class="service-item">
+          <h6>UI/UX Design</h6>
+          <div class="sep red"></div>
+          <div class="margin-1"></div>
+          <p class="small">Design is the silent embassador of your brand and when it comes to branding, we own the game.</p>
+          <div class="margin-5"></div>
+        </div>
+        <div class="service-item">
+          <h6>Case Studies</h6>
+          <div class="sep red"></div>
+          <div class="margin-1"></div>
+          <p class="small">Everything needs to be planned out perfectly and we can help you complete your vision.</p>
+          <div class="margin-5"></div>
+        </div>
+        <div class="service-item">
+          <h6>Support</h6>
+          <div class="sep red"></div>
+          <div class="margin-1"></div>
+          <p class="small">We stand by our clients with excellent support and attention to every little detail.</p>
+          <div class="margin-5"></div>
+        </div>
+      </div>
+      <div class="margin-3"></div>
+
+      <div class="team-container">
+        <div class="team-member team-info">
+          <h4>Team Players</h4>
+          <p class="small">We are a digital agency with 20 collective experience in advertising printing, digital, typesetting and apparel industry.</p>
+          <p class="small no-bottom">And Oh! <a href="#">We're Hiring</a></p>
+        </div>
+        <div class="team-member">
+          <a href="#" class="team-photo">
+            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <span class="info"><span class="text"><span class="name">Emma Willkins</span><span class="description">SEO</span></span></span>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="#" class="team-photo">
+            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <span class="info"><span class="text"><span class="name">Joe Doe</span><span class="description">Partner</span></span></span>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="#" class="team-photo">
+            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <span class="info"><span class="text"><span class="name">Andras Ladocsi</span><span class="description">Web Developer</span></span></span>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="#" class="team-photo">
+            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <span class="info"><span class="text"><span class="name">Mike Gradski</span><span class="description">Web Designer</span></span></span>
+          </a>
+        </div>
+        <div class="team-member">
+          <a href="#" class="team-photo">
+            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <span class="info"><span class="text"><span class="name">Matt Johnson</span><span class="description">UI/UX Designer</span></span></span>
+          </a>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="margin-2"></div>
+
+      <div class="clients-grid">
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="client">
+          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="margin-1"></div>
+      <p class="small text-right text-red">*Clientele as of 2015</p>
     </div>
-    
-    <section class="team wrap wide">
-      
-      <h2>Our Purring Team</h2>
+    <div class="margin-5"></div>
 
-      <ul class="team-list grid gutter-1">
-        <?php foreach($page->children()->visible() as $member): ?>
-          <li class="team-item column">
-            
-            <?php if($image = $member->image()): ?>
-              <figure class="team-portrait">
-                <img src="<?= $image->url() ?>" alt="Portrait of <?= $member->title()->html() ?>" />
-              </figure>
-            <?php endif ?>
-            
-            <div class="team-info">
-              <h3 class="team-name"><?= $member->title()->html() ?></h3>
-              <p class="team-position"><?= $member->position()->html() ?></p>
-              <div class="team-about text">
-                <?= $member->about()->kirbytext() ?>
-              </div>
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        <h4>Join the league!</h4>
+        <h4>Let's work together</h4>
+        <a href="#" class="button filled">Get in touch</a>
+        <div class="margin-2"></div>
+      </div>
+      <div class="col-sm-5">
+        <div class="red-border testimonials-vertical-offset">
+          <div class="owl-carousel owl-testimonials2 owl-red-dots">
+            <div class="testimonial-item">
+              <p>They listened to our ideas and objectives then produced a website that has been key competitive advantage in the whole industry.</p>
+              <em class="name">- Corleone Clothings</em>
             </div>
-            
-            <div class="team-contact text">
-              <i>Phone:</i><br />
-              <?= kirbytag(['tel' => $member->phone()->html()]) ?><br />
-              <i>Email:</i><br />
-              <a href="mailto:<?= $member->email()->html() ?>"><?= $member->email()->html() ?></a><br />
+            <div class="testimonial-item">
+              <p>They listened to our ideas and objectives then produced a website that has been key competitive advantage in the whole industry.</p>
+              <em class="name">- Corleone Clothings</em>
             </div>
-          </li>
-        <?php endforeach ?>
-      </ul>
-      
-    </section>
-
-  </main>
+            <div class="testimonial-item">
+              <p>They listened to our ideas and objectives then produced a website that has been key competitive advantage in the whole industry.</p>
+              <em class="name">- Corleone Clothings</em>
+            </div>
+          </div>
+        </div>
+        <div class="margin-3"></div>
+      </div>
+    </div>
+    <img src="img/sample-slide.png" width="1240" height="698" alt="">
+    <div class="margin-5"></div>
+  </div>
+</main>
 
 <?php snippet('footer') ?>

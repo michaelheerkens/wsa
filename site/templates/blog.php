@@ -1,60 +1,68 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+<main id="content" role="main">
+  <div class="container container-masonry">
+    <div class="inner">
+      <div class="row">
 
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-
-      <?php
-      // This page uses a separate controller to set variables, which can be used
-      // within this template file. This results in less logic in your templates,
-      // making them more readable. Learn more about controllers at:
-      // https://getkirby.com/docs/developer-guide/advanced/controllers
-      if($pagination->page() == 1):
-      ?>
-        <div class="intro text">
-          <?= $page->text()->kirbytext() ?>
-        </div>
-      <?php endif ?>
-
-      <hr />
-    </header>
-
-    <section class="wrap">
-      <?php if($articles->count()): ?>
-        <?php foreach($articles as $article): ?>
-
-          <article class="article index">
-
-            <header class="article-header">
-              <h2 class="article-title">
-                <a href="<?= $article->url() ?>"><?= $article->title()->html() ?></a>
-              </h2>
-
-              <p class="article-date"><?= $article->date('F jS, Y') ?></p>
-            </header>
-
-            <?php snippet('coverimage', $article) ?>
-
-            <div class="text">
-              <p>
-                <?= $article->text()->kirbytext()->excerpt(50, 'words') ?>
-                <a href="<?= $article->url() ?>" class="article-more">read more</a>
-              </p>
+        <div class="box col-sm-7 col-md-6">
+          <div class="thumb featured">
+            <div class="photo">
+              <a href="post.html">
+                <img src="img/sample-thumb.png" alt="" width="715" height="715">
+                <span class="info"><strong class="big-title">Dominance, focal points and hierarchy</strong><span class="excerpt">Your content might be the king, but are you presenting it as one? Do people look where they should?</span><em class="arrow-right"></em></span>
+              </a>
             </div>
+          </div>
+        </div>
 
-          </article>
+        <div class="box col-sm-5 col-md-3">
+          <div class="post-box vertical clearfix">
+            <a href="post.html" class="image-link arrow-icon"><img src="img/sample-thumb.png" width="434" height="434" alt=""></a>
+            <div class="extra-info">
+              <p class="meta small">1 day ago by <a href="#">Nicole</a></p>
+              <h5><a href="post.html">Harnessing Flexbox For Today’s Webapps</a></h5>
+            </div>
+          </div>
+        </div>
 
-          <hr />
+        <div class="box col-sm-6 col-md-3">
+          <div class="post-box vertical clearfix">
+            <div class="extra-info">
+              <p class="meta small">2 day ago by <a href="#">Sheila</a></p>
+              <h5><a href="post.html">Conducting User Research in other countries</a></h5>
+            </div>
+            <a href="post.html" class="image-link arrow-icon dark-overlay"><img src="img/sample-thumb.png" width="434" height="434" alt=""></a>
+          </div>
+        </div>
 
-        <?php endforeach ?>
-      <?php else: ?>
-        <p>This blog does not contain any articles yet.</p>
-      <?php endif ?>
-    </section>
+        <div class="box col-sm-6">
+          <div class="post-box horizontal clearfix">
+            <a href="post.html" class="image-link play-icon dark-overlay"><img src="img/sample-thumb.png" width="434" height="434" alt=""></a>
+            <div class="extra-info">
+              <p class="meta small">4 days ago by <a href="#">Andrew</a></p>
+              <h5><a href="post.html">Putting Mobile Backend as a service into practice</a></h5>
+            </div>
+          </div>
+        </div>
 
-    <?php snippet('pagination') ?>
+        <div class="box col-sm-6">
+          <div class="post-box horizontal clearfix">
+            <a href="post.html" class="image-link arrow-icon"><img src="img/sample-thumb.png" width="434" height="434" alt=""></a>
+            <div class="extra-info">
+              <p class="meta small">5 days ago by <a href="#">Sheila</a></p>
+              <h5><a href="post.html">Product Design Unification Study: Mobile Web Framework</a></h5>
+            </div>
+          </div>
+        </div>
 
-  </main>
+        <div class="box col-sm-12 text-center">
+          <a href="blog.html" class="button color no-bottom">Load More Posts</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
 
 <?php snippet('footer') ?>
