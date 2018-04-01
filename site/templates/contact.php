@@ -1,41 +1,74 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-    
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>      
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
-      </div>    
-      <hr />      
-    </header>
-    
-    <div class="wrap wide">
-      <h2>Get in Touch</h2>
-      
-      <ul class="contact-options">
-        <?php foreach($page->contactoptions()->toStructure() as $item): ?>
-          <?php $icon = $page->image($item->icon()); ?>
-          <li class="contact-item column">
-            <div class="contact-item-content">
-              <img src="<?= $icon->url() ?>" width="<?= $icon->width() ?>" alt="<?= $item->title()->html() ?> icon" class="contact-item-icon" />
-              <h3 class="contact-item-title"><?= $item->title()->html() ?></h3>
-              <p class="contact-item-text">
-                <?= $item->text()->html() ?>
-              </p>
-            </div>
-            <p class="contact-item-action">
-              <a href="<?= $item->url()->html() ?>" class="contact-action btn"><?= $item->linktext()->html() ?></a>
+<main id="content" role="main">
+  <div class="container container-boxes">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="box white-bg" style="background-image:url(img/sample-inside.png)">
+          <h1>Contact Us</h1>
+          <p>Below are some info on how to reach out to us. <br><a href="#">Locate us on Map</a></p>
+          <p class="small contact-address-info">
+            <i class="fa fa-map-marker"></i>
+            52 Crash Port<br>
+            New Orleans, CA
+          </p>
+          <p class="small contact-address-info">
+            <i class="fa fa-envelope"></i>
+            hi@exa.com<br>
+            sales@exa.com
+          </p>
+          <p class="small contact-address-info">
+            <i class="fa fa-phone"></i>
+            +1 2345 678 910<br>
+            +1 9876 543 210
+          </p>
+        </div>
+        <div class="box white-bg text-center">
+          <h5>Connect with us</h5>
+          <p>Follow us, send us your work, share something cool you did in your latest project</p>
+          <p class="social-share no-bottom">
+            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-dribbble"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-pinterest"></i></a>
+            <a href="#" class="social-link"><i class="fa fa-behance"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="box white-bg text-center">
+          <div class="col-md-6">
+            <p class="twitter-follow">
+              <a href="#" class="username"><i class="fa fa-twitter"></i>@exastudios</a>
+              <a href="#" class="button">Follow</a>
             </p>
-          </li>
-        <?php endforeach ?>
-      </ul>
+          </div>
+          <div class="col-md-6">
+            <h5 class="twitter-follow-text no-bottom">Follow us to catch the latest buzz. Join our 800k+ followers</h5>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="box white-bg">
+          <h5>Send message</h5>
+          <div class="sep red"></div>
+          <div class="margin-1"></div>
+          <form action="contact1.html" class="no-bottom">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" class="underline" name="name" id="name" placeholder="Your name..." required>
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" class="underline" name="email" id="email" placeholder="Your email..." required>
+            <label for="message" class="sr-only">Message</label>
+            <textarea class="underline" name="message" id="message" cols="30" rows="6" placeholder="Here goes the message..." required></textarea>
+            <div class="margin-1"></div>
+            <input type="submit" value="Send it">
+          </form>
+        </div>
+      </div>
     </div>
-      
-    <div class="contact-twitter text wrap cf">
-      <?= $page->text()->kirbytext() ?>
-    </div>
-    
-  </main>
+  </div>
+</main>
 
 <?php snippet('footer') ?>
