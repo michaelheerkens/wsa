@@ -14,3 +14,24 @@ fields:
   text:
     label: Text
     type:  textarea
+
+  blocks:
+    label: Homepage blocks
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+      icon:
+        label: Icon
+        type: image
+      text:
+        label: Text
+        type: text
+      url:
+        label: URL
+        type: text
+      linktext:
+        label: Link Text
+        type: text

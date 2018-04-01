@@ -1,29 +1,54 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-    
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
-      </div>
-      <hr />
-    </header>
 
-    <div class="text wrap">
-      <?= $page->text()->kirbytext() ?>
+<main id="content" role="main">
+  <div class="container container-masonry">
+    <div class="inner">
+      <div class="row">
+        <?php $ind = 0; ?>
+        <?php foreach($page->blocks()->toStructure() as $item): ?>
+          <?php $icon = $page->image($item->icon()); ?>
+
+          <?php if($ind === 0): ?>
+          <div class="box col-sm-4 col-md-6">
+            <div class="thumb featured">
+              <div class="photo">
+                <a href="<?= $item->url()->html() ?>">
+                  <img src="<?= $icon->url() ?>" alt="" width="715" height="715">
+                  <span class="info"><strong class="big-title"><?= $item->title()->html() ?></strong><span class="excerpt"><?= $item->text()->html() ?></span><em class="arrow-right"></em></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        <?php endif ?>
+
+          <?php if($ind > 0): ?>
+          <div class="box col-xs-6 col-sm-4 col-md-3">
+            <div class="thumb">
+              <div class="photo">
+                <a href="<?= $item->url()->html() ?>">
+                  <img src="<?= $icon->url() ?>" alt="" width="434" height="434">
+                  <span class="info"><strong class="title"><?= $item->title()->html() ?></strong><span class="excerpt"><?= $item->text()->html() ?></span><em class="arrow-right"></em></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        <?php endif ?>
+
+        <?php $ind++; ?>
+        <?php endforeach ?>
+      </div>
     </div>
-  
-    <section class="projects-section">
-      
-      <div class="wrap wide">
-        <h2>Latest Projects</h2>
-        <?php snippet('showcase', ['limit' => 3]) ?>
-        <p class="projects-section-more"><a href="<?= page('projects')->url() ?>" class="btn">show all projects &hellip;</a></p>
-      </div>
-      
-    </section>
-
-  </main>
+    <div class="row">
+				<div class="col-sm-4">
+					<p><?= $page->text()->kirbytext() ?></p>
+				</div>
+				<div class="col-sm-8">
+					<p><?= $page->intro()->kirbytext() ?></p>
+				</div>
+			</div>
+    <div class="clear"></div>
+  </div>
+</main>
 
 <?php snippet('footer') ?>

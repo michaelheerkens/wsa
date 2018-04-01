@@ -2,19 +2,81 @@ Title: Home
 
 ----
 
-Intro: Yay! If you are seeing this, the installation of Kirby worked. :-)
+Intro: 
+
+####INTERIEURADVIES, VERKOOPSTYLING, KLEURADVIES IN ROTTERDAM
+
+De site voor interieuradvies en verkoopstyling in Rotterdam. Voor ieder budget hebben we een geschikt pakket. Advies in uw huidige woonstijl, het veranderen van uw woonstijl met behoudt van de voor u belangrijke meubelstukken of een nieuwe start met een totaal nieuw interieur.
+
+Staat uw huis te koop? Woonstijladvies is ook verkoopstyling.
+
+Heeft u uw droominterieur gerealiseerd en blijft u graag op de hoogte van de laatste trends, of gaat u liever zelf aan de slag met kleine aanpassingen in uw interieur? Volg dan de blog voor alle woontrends en interieuradviezen!
 
 ----
 
 Text: 
 
-## Get started
+####INTERIEUR ADVIES
 
-- Go to the (link: panel text: Panel) to give Kirby's admin interface a try
-- Check out the (link: http://getkirby.com/docs text: docs) and start building your own site
-- Follow (twitter: @getkirby) on Twitter for updates
-- Visit the (link: http://forum.getkirby.com text: forum) to connect with other Kirby users
-- Sign up to (link: https://getkirby.com/#kosmos text: Kirby Kosmos), our monthly newsletter
-- (link: http://getkirby.com/support text: Get in contact) if you need support.
+Persoonlijk interieur advies, voor ieder budget!
 
-**Have fun with Kirby!**
+----
+
+Blocks: 
+
+- 
+  title: Interieuradvies voor ieder budget
+  icon: 2018-04-01_16-55-00.png
+  text: >
+    Verkoop uw woning sneller door
+    verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
+- 
+  title: Verkoopstyling
+  icon: 2018-04-01_16-55-00.png
+  text: Verkoopstyling
+  url: ""
+  linktext: ""
