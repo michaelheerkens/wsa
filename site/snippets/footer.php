@@ -1,7 +1,7 @@
 <footer id="footer" role="contentinfo">
   <div class="container">
     <p>
-      <a href="index.html" class="mini-logo"><img src="assets/img/logo-footer.png" width="90" height="33" alt="Exa"></a>
+      <a href="index.html" class="mini-logo"><img src="assets/img/logo-footer.png" width="156" height="43" alt="Exa"></a>
     </p>
     <p>&copy; 2015 Exa Studios Inc. All Rights Reserved.</p>
     <p>
