@@ -7,7 +7,7 @@ pages:
   sort: flip
   num: date
 
-options: 
+options:
   template: false
   status: false
 
@@ -40,3 +40,7 @@ fields:
       To fill the blog page with content, just hit the <b>Add</b> button
       to create a new article. Your blog articles will be automatically ordered by
       date.
+  tags:
+    label: Tags
+    type: tags
+    separator: /
