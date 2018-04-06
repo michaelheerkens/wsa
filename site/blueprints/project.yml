@@ -19,3 +19,31 @@ fields:
   text:
     label: Text
     type:  textarea
+
+  project:
+    label: Project
+    type:  text
+    width: 1/3
+
+  type:
+    label: Type
+    type:  text
+    width: 1/3
+
+  style:
+    label: Style
+    type:  text
+    width: 1/3
+
+  tags:
+    label: Tags
+    type: tags
+    separator: /
+
+  gallery:
+    label: Gallery
+    type: structure
+    fields:
+      gallery_image:
+        label: Image
+        type: image

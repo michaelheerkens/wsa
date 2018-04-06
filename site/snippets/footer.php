@@ -15,5 +15,32 @@
 
 <?= js('assets/js/jquery.min.js') ?>
 <?= js('assets/js/site.js') ?>
+
+<?= js('assets/js/owl.carousel.min.js') ?>
+<script>
+  jQuery(".owl-carousel.owl-slider").owlCarousel({
+    items   : 1,
+    nav     : true,
+    navText : ['', ''],
+    loop    : true
+  });
+  jQuery(".owl-carousel.owl-thumbs").owlCarousel({
+    items   : 3,
+    margin  : 30,
+    nav     : true,
+    navText : ['', ''],
+    dots    : false,
+    loop    : false,
+    responsive : {
+      0: {
+        items   : 2
+      },
+      768: {
+        items   : 3
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
