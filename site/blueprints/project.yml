@@ -40,6 +40,10 @@ fields:
     type: tags
     separator: /
 
+  cover_image:
+     label: Cover images (434x424px)
+     type: image
+
   gallery:
     label: Gallery
     type: structure
