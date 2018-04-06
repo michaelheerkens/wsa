@@ -45,5 +45,5 @@ fields:
     type: structure
     fields:
       gallery_image:
-        label: Image
+        label: Image (1240x698)
         type: image
