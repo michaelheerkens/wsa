@@ -22,7 +22,7 @@
         <h6>Type woning</h6>
         <p class="small"><?= $page->project()->html() ?></p>
         <h6>Soort advies</h6>
-        <p class="small"><?= $page->title()->html() ?></p>
+        <p class="small"><?= $page->type()->html() ?></p>
         <h6>Woonstijl</h6>
         <p class="small"><?= $page->style()->html() ?></p>
         <p class="social-share">
