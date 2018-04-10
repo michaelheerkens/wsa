@@ -9,7 +9,7 @@
     <div class="sep red margin-1"></div>
     <div class="owl-carousel owl-thumbs">
       <?php
-        $filtered = $page->children()->filterBy('tags', 'restyling', '/');
+        $filtered = $page->children()->filterBy('tags', 'Woonstijladvies Restyling', '/');
         foreach($filtered as $article): ?>
         <div class="thumb dark-overlay">
           <div class="photo">
@@ -32,7 +32,7 @@
     <div class="sep red margin-1"></div>
     <div class="owl-carousel owl-thumbs">
       <?php
-        $filtered = $page->children()->filterBy('tags', 'opmaat', '/');
+        $filtered = $page->children()->filterBy('tags', 'Woonstijladvies Op Maat', '/');
         foreach($filtered as $article): ?>
         <div class="thumb dark-overlay">
           <div class="photo">
@@ -55,7 +55,7 @@
     <div class="sep red margin-1"></div>
     <div class="owl-carousel owl-thumbs">
       <?php
-        $filtered = $page->children()->filterBy('tags', 'luxe', '/');
+        $filtered = $page->children()->filterBy('tags', 'Woonstijladvies Luxe', '/');
         foreach($filtered as $article): ?>
         <div class="thumb dark-overlay">
           <div class="photo">
