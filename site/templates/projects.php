@@ -78,7 +78,7 @@
     <div class="sep red margin-1"></div>
     <div class="owl-carousel owl-thumbs">
       <?php
-        $filtered = $page->children()->filterBy('tags', 'Woonstijladvies Verkoopstyling', '/');
+        $filtered = $page->children()->filterBy('tags', 'Verkoopstyling', '/');
         foreach($filtered as $article): ?>
         <div class="thumb dark-overlay">
           <div class="photo">
