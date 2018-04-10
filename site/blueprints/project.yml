@@ -41,7 +41,7 @@ fields:
     separator: /
 
   cover_image:
-     label: Cover images (434x424px)
+     label: Cover image (434x424px)
      type: image
 
   gallery:
