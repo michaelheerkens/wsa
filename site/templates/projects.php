@@ -32,7 +32,7 @@
     <div class="sep red margin-1"></div>
     <div class="owl-carousel owl-thumbs">
       <?php
-        $filtered = $page->children()->filterBy('tags', 'Woonstijladvies Op Maat', '/');
+        $filtered = $page->children()->filterBy('tags', 'Woonstijladvies op Maat', '/');
         foreach($filtered as $article): ?>
         <div class="thumb dark-overlay">
           <div class="photo">
