@@ -23,7 +23,7 @@
           // try to get an image object from the filename
           $image = $adviseItem->image()->toFile();
           ?>
-          <?if($ind===0): ?>
+          <?php if($ind===0): ?>
             <div class="box col-sm-5 col-md-3">
               <div class="post-box vertical clearfix">
                 <a href="<?= $adviseItem->link()->html() ?>" class="image-link arrow-icon">
@@ -37,7 +37,7 @@
                 </div>
               </div>
             </div>
-          <?elseif($ind==1): ?>
+          <?php elseif($ind==1): ?>
             <div class="box col-sm-6 col-md-3">
               <div class="post-box vertical clearfix">
                 <div class="extra-info">
@@ -51,7 +51,7 @@
                 </a>
               </div>
             </div>
-          <?else: ?>
+          <?php else: ?>
             <div class="box col-sm-6">
               <div class="post-box horizontal clearfix">
                 <a href="<?= $image->url() ?>" class="image-link arrow-icon">
@@ -65,7 +65,7 @@
                 </div>
               </div>
             </div>
-          <? endif ?>
+          <?php endif ?>
           <?$ind++?>
         <?php endforeach ?>
 
