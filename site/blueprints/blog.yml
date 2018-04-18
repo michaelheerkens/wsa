@@ -36,6 +36,11 @@ fields:
   text:
     label: Text
     type: textarea
+    
+  coverimage:
+    label: Cover Image
+    type: image
+    width: 1/2
 
   advise:
     label: Advise
