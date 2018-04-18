@@ -27,9 +27,9 @@
             <div class="box col-sm-5 col-md-3">
               <div class="post-box vertical clearfix">
                 <a href="<?= $adviseItem->link()->html() ?>" class="image-link arrow-icon">
-                  <?if($image): ?>
+                  <?php if($image): ?>
                     <img src="<?= $image->url() ?>" width="434" height="434" alt="">
-                  <? endif ?>
+                  <?php  endif ?>
                 </a>
                 <div class="extra-info">
                   <p class="meta small">1 day ago by <a href="#">Nicole</a></p>
@@ -66,7 +66,7 @@
               </div>
             </div>
           <?php endif ?>
-          <?$ind++?>
+          <?php $ind++ ?>
         <?php endforeach ?>
 
       </div>
