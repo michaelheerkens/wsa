@@ -29,7 +29,7 @@
                 <a href="<?= $adviseItem->link()->html() ?>" class="image-link arrow-icon">
                   <?if($image): ?>
                     <img src="<?= $image->url() ?>" width="434" height="434" alt="">
-                  <?php endif ?>
+                  <? endif ?>
                 </a>
                 <div class="extra-info">
                   <p class="meta small">1 day ago by <a href="#">Nicole</a></p>
