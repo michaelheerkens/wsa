@@ -36,9 +36,9 @@ fields:
   text:
     label: Text
     type: textarea
-    
+
   coverimage:
-    label: Cover Image
+    label: Cover Image (715x715)
     type: image
     width: 1/2
 
