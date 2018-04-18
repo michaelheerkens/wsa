@@ -47,7 +47,7 @@
                 <a href="<?= $adviseItem->link()->html() ?>" class="image-link arrow-icon dark-overlay">
                   <?if($image): ?>
                     <img src="<?= $image->url() ?>" width="434" height="434" alt="">
-                  <?php endif ?>
+                  <? endif ?>
                 </a>
               </div>
             </div>
@@ -57,7 +57,7 @@
                 <a href="<?= $image->url() ?>" class="image-link arrow-icon">
                   <?if($image): ?>
                     <img src="<?= $image->url() ?>" width="434" height="434" alt="">
-                  <?php endif ?>
+                  <? endif ?>
                 </a>
                 <div class="extra-info">
                   <p class="meta small">5 days ago by <a href="#">Sheila</a></p>
@@ -65,7 +65,7 @@
                 </div>
               </div>
             </div>
-          <?php endif ?>
+          <? endif ?>
           <?$ind++?>
         <?php endforeach ?>
 
