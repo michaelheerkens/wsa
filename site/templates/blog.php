@@ -64,7 +64,7 @@
                 </a>
                 <div class="extra-info">
                   <p class="meta small">5 days ago by <a href="#">Sheila</a></p>
-                  <h5><a href="<?= $image->url() ?>"><?= $adviseItem->link()->html() ?></a></h5>
+                  <h5><a href="<?= $adviseItem->link()->html() ?>"><?= $adviseItem->title()->html() ?></a></h5>
                 </div>
               </div>
             </div>

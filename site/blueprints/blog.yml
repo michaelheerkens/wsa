@@ -49,9 +49,12 @@ fields:
       title:
         label: Title
         type: title
+        required: true
       link:
         label: Link
         type: title
+        required: true
       image:
         label: Image (434x434)
         type: image
+        required: true
