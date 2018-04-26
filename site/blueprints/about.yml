@@ -1,24 +1,65 @@
 title: About
 
 pages:
-  template: team
+  template:
+    - team
+    - aboutdetail
   num: zero
 
 files: false
 
-options: 
-  template: false  
-  status: false  
-  
+options:
+  template: false
+  status: false
+
 fields:
   title:
     label: Title
     type: title
-    
+
+  coverimage:
+    label: Cover Image (1240x698)
+    type: image
+    width: 1/2
+
   intro:
     label: Intro
     type: textarea
-    
+
   text:
     label: Text
     type: textarea
+
+  list:
+      label: List
+      type: structure
+      entry: >
+        {{title}}
+      fields:
+        title:
+          label: Title
+          type: text
+        item1:
+          label: Item 1
+          type: text
+        item2:
+          label: Item 2
+          type: text
+        item3:
+          label: Item 3
+          type: text
+        item4:
+          label: Item 4
+          type: text
+        item5:
+          label: Item 5
+          type: text
+        item6:
+          label: Item 6
+          type: text
+        buttontext:
+          label: Button text
+          type: text
+        buttonlink:
+          label: Button link
+          type: text

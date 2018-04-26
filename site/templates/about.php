@@ -3,7 +3,12 @@
 <main id="content" class="white-background" role="main">
   <div class="container">
     <div class="inner">
-      <img src="assets/img/sample-slide.png" width="1240" height="698" alt="">
+      <?php $coverimage = $page->coverimage()->toFile(); ?>
+      <?php if($coverimage): ?>
+        <img src="<?= $coverimage->url() ?>" width="1240" height="698" alt="">
+      <?php else: ?>
+        <img src="assets/img/sample-slide.png" width="1240" height="698" alt="">
+      <?php  endif ?>
       <div class="margin-4"></div>
       <div class="row">
 				<div class="col-md-6">
@@ -16,64 +21,28 @@
 			</div>
       <div class="margin-2"></div>
       <div class="row">
+      <?php
+      $adviseItems = $page->list()->toStructure();
+      $ind = 0;
+      foreach($adviseItems as $adviseItem): ?>
         <div class="col-sm-4">
-          <h5>List 1</h5>
+          <h5><?= $adviseItem->title->value() ?></h5>
           <ul class="fa-ul">
-						<li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
-						<li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
-						<li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+            <?php foreach($adviseItem as $i): ?>
+              <?php if(substr($i->key, 0, 4) === 'item' && !empty($i->value)): ?>
+                <li><i class="fa-li fa fa-check fa-colored"></i><?=$i->value?></li>
+              <?php endif ?>
+            <?php endforeach ?>
 					</ul>
-          <a href="#" class="button">Normal button</a>
-				</div>
-        <div class="col-sm-4">
-          <h5>List 1</h5>
-          <ul class="fa-ul">
-						<li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
-						<li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
-						<li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
-					</ul>
-          <a href="#" class="button">Normal button</a>
-				</div>
-        <div class="col-sm-4">
-          <h5>List 1</h5>
-          <ul class="fa-ul">
-						<li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
-						<li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
-						<li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
-					</ul>
-          <a href="#" class="button">Normal button</a>
-				</div>
-			</div>
-      <div class="margin-2"></div>
-      <div class="row">
-        <div class="col-sm-4">
-          <h5>List 1</h5>
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
-            <li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
-            <li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
-          </ul>
-          <a href="#" class="button">Normal button</a>
+          <a href="<?= $adviseItem->buttonlink->value()?>" class="button"><?= $adviseItem->buttontext->value()?></a>
         </div>
-        <div class="col-sm-4">
-          <h5>List 1</h5>
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
-            <li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
-            <li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
-          </ul>
-          <a href="#" class="button">Normal button</a>
-        </div>
-        <div class="col-sm-4">
-          <h5>List 1</h5>
-          <ul class="fa-ul">
-            <li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
-            <li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
-            <li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
-          </ul>
-          <a href="#" class="button">Normal button</a>
-        </div>
-      </div>
+        <?if ($ind === 2):?>
+          </div><div class="margin-2"></div><div class="row">
+        <?php endif ?>
+        <?php $ind++ ?>
+      <?php endforeach ?>
+    </div>
+
       <div class="margin-2"></div>
       <div class="clear"></div>
       <div class="col-sm-12 col-md-10 col-md-offset-1">
