@@ -6,7 +6,7 @@ pages:
     - aboutdetail
   num: zero
 
-files: false
+files: true
 
 options:
   template: false
