@@ -36,7 +36,7 @@
 					</ul>
           <a href="<?= $adviseItem->buttonlink->value()?>" class="button"><?= $adviseItem->buttontext->value()?></a>
         </div>
-        <?if ($ind === 2):?>
+        <?php if ($ind === 2):?>
           </div><div class="margin-2"></div><div class="row">
         <?php endif ?>
         <?php $ind++ ?>
