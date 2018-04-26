@@ -58,3 +58,7 @@ fields:
         label: Image (434x434)
         type: image
         required: true
+      flipimage:
+        label: Flip image
+        type: checkbox
+        text: yes, flip image

@@ -57,15 +57,24 @@
           <?php else: ?>
             <div class="box col-sm-6">
               <div class="post-box horizontal clearfix">
-                <a href="<?= $image->url() ?>" class="image-link arrow-icon">
+                <?php if($adviseItem->flipimage()->value() != "1") : ?>
+                <a href="<?= $image->url() ?>" class="image-link image-left arrow-icon">
                   <?if($image): ?>
                     <img src="<?= $image->url() ?>" width="434" height="434" alt="">
                   <? endif ?>
                 </a>
+                <?php endif ?>
                 <div class="extra-info">
                   <p class="meta small">5 days ago by <a href="#">Sheila</a></p>
                   <h5><a href="<?= $adviseItem->link()->html() ?>"><?= $adviseItem->title()->html() ?></a></h5>
                 </div>
+              <?php if($adviseItem->flipimage()->value() === "1") : ?>
+                <a href="<?= $image->url() ?>" class="image-link image-right arrow-icon">
+                  <?if($image): ?>
+                    <img src="<?= $image->url() ?>" width="434" height="434" alt="">
+                  <? endif ?>
+                </a>
+                <?php endif ?>
               </div>
             </div>
           <?php endif ?>

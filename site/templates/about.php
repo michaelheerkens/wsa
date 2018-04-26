@@ -3,58 +3,86 @@
 <main id="content" class="white-background" role="main">
   <div class="container">
     <div class="inner">
-      <img src="img/sample-slide.png" width="1240" height="698" alt="">
+      <img src="assets/img/sample-slide.png" width="1240" height="698" alt="">
       <div class="margin-4"></div>
       <div class="row">
-        <div class="col-md-6">
-          <h3><?= $page->title()->html() ?></h3>
-          <div class="margin-4"></div>
+				<div class="col-md-6">
+					<h3><?= $page->intro()->html() ?></h3>
+					<div class="margin-4"></div>
+				</div>
+				<div class="col-md-6">
+					<p><?= $page->text()->kirbytext() ?></p>
+				</div>
+			</div>
+      <div class="margin-2"></div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h5>List 1</h5>
+          <ul class="fa-ul">
+						<li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
+						<li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
+						<li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+					</ul>
+          <a href="#" class="button">Normal button</a>
+				</div>
+        <div class="col-sm-4">
+          <h5>List 1</h5>
+          <ul class="fa-ul">
+						<li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
+						<li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
+						<li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+					</ul>
+          <a href="#" class="button">Normal button</a>
+				</div>
+        <div class="col-sm-4">
+          <h5>List 1</h5>
+          <ul class="fa-ul">
+						<li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
+						<li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
+						<li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+					</ul>
+          <a href="#" class="button">Normal button</a>
+				</div>
+			</div>
+      <div class="margin-2"></div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h5>List 1</h5>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
+            <li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
+            <li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+          </ul>
+          <a href="#" class="button">Normal button</a>
         </div>
-        <div class="col-md-6">
-          <?= $page->intro()->html() ?>
-          <div class="margin-4"></div>
+        <div class="col-sm-4">
+          <h5>List 1</h5>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
+            <li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
+            <li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+          </ul>
+          <a href="#" class="button">Normal button</a>
+        </div>
+        <div class="col-sm-4">
+          <h5>List 1</h5>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check fa-colored"></i>We are a digital agency with 20 plus years</li>
+            <li><i class="fa-li fa fa-check fa-colored"></i>Business like this takes much more effort</li>
+            <li><i class="fa-li fa fa-check fa-colored"></i>Worries about making train connections</li>
+          </ul>
+          <a href="#" class="button">Normal button</a>
         </div>
       </div>
-
-      <div class="owl-carousel owl-services owl-red-dots">
-        <div class="service-item">
-          <h6>Advertising</h6>
-          <div class="sep red"></div>
-          <div class="margin-1"></div>
-          <p class="small">Your advertisement on the most optimal device for a better targetted audience &amp; via a global market.</p>
-          <div class="margin-5"></div>
-        </div>
-        <div class="service-item">
-          <h6>Branding</h6>
-          <div class="sep red"></div>
-          <div class="margin-1"></div>
-          <p class="small">Design is the silent embassador of your brand and when it comes to branding, we own the game.</p>
-          <div class="margin-5"></div>
-        </div>
-        <div class="service-item">
-          <h6>UI/UX Design</h6>
-          <div class="sep red"></div>
-          <div class="margin-1"></div>
-          <p class="small">Design is the silent embassador of your brand and when it comes to branding, we own the game.</p>
-          <div class="margin-5"></div>
-        </div>
-        <div class="service-item">
-          <h6>Case Studies</h6>
-          <div class="sep red"></div>
-          <div class="margin-1"></div>
-          <p class="small">Everything needs to be planned out perfectly and we can help you complete your vision.</p>
-          <div class="margin-5"></div>
-        </div>
-        <div class="service-item">
-          <h6>Support</h6>
-          <div class="sep red"></div>
-          <div class="margin-1"></div>
-          <p class="small">We stand by our clients with excellent support and attention to every little detail.</p>
-          <div class="margin-5"></div>
-        </div>
-      </div>
-      <div class="margin-3"></div>
-
+      <div class="margin-2"></div>
+      <div class="clear"></div>
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+				<blockquote>
+					<p>“First, we must ensure the validity of the approach. Second, we must confirm browser makers to add support for web fonts.”</p>
+					<cite>Andrew Simons - web developer</cite>
+				</blockquote>
+			</div>
+      <div class="clear"></div>
       <div class="team-container">
         <div class="team-member team-info">
           <h4>Team Players</h4>
@@ -63,67 +91,37 @@
         </div>
         <div class="team-member">
           <a href="#" class="team-photo">
-            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <img src="assets/img/sample-team.png" width="640" height="640" alt="">
             <span class="info"><span class="text"><span class="name">Emma Willkins</span><span class="description">SEO</span></span></span>
           </a>
         </div>
         <div class="team-member">
           <a href="#" class="team-photo">
-            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <img src="assets/img/sample-team.png" width="640" height="640" alt="">
             <span class="info"><span class="text"><span class="name">Joe Doe</span><span class="description">Partner</span></span></span>
           </a>
         </div>
         <div class="team-member">
           <a href="#" class="team-photo">
-            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <img src="assets/img/sample-team.png" width="640" height="640" alt="">
             <span class="info"><span class="text"><span class="name">Andras Ladocsi</span><span class="description">Web Developer</span></span></span>
           </a>
         </div>
         <div class="team-member">
           <a href="#" class="team-photo">
-            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <img src="assets/img/sample-team.png" width="640" height="640" alt="">
             <span class="info"><span class="text"><span class="name">Mike Gradski</span><span class="description">Web Designer</span></span></span>
           </a>
         </div>
         <div class="team-member">
           <a href="#" class="team-photo">
-            <img src="img/sample-team.png" width="640" height="640" alt="">
+            <img src="assets/img/sample-team.png" width="640" height="640" alt="">
             <span class="info"><span class="text"><span class="name">Matt Johnson</span><span class="description">UI/UX Designer</span></span></span>
           </a>
         </div>
         <div class="clear"></div>
       </div>
       <div class="margin-2"></div>
-
-      <div class="clients-grid">
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="client">
-          <a href="#"><img src="img/sample-client.png" width="320" height="220" alt=""></a>
-        </div>
-        <div class="clear"></div>
-      </div>
-      <div class="margin-1"></div>
-      <p class="small text-right text-red">*Clientele as of 2015</p>
     </div>
     <div class="margin-5"></div>
 
@@ -154,7 +152,7 @@
         <div class="margin-3"></div>
       </div>
     </div>
-    <img src="img/sample-slide.png" width="1240" height="698" alt="">
+    <img src="assets/img/sample-slide.png" width="1240" height="698" alt="">
     <div class="margin-5"></div>
   </div>
 </main>
