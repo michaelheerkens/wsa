@@ -63,3 +63,13 @@ fields:
         buttonlink:
           label: Button link
           type: text
+
+  quote:
+    label: Quote
+    type: text
+    width: 2/3
+
+  quoteby:
+    label: By
+    type: text
+    width: 1/3

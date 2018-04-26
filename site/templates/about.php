@@ -47,8 +47,8 @@
       <div class="clear"></div>
       <div class="col-sm-12 col-md-10 col-md-offset-1">
 				<blockquote>
-					<p>“First, we must ensure the validity of the approach. Second, we must confirm browser makers to add support for web fonts.”</p>
-					<cite>Andrew Simons - web developer</cite>
+					<p>“<?= $page->quote()->value()?>”</p>
+					<cite><?= $page->quoteby()->value()?></cite>
 				</blockquote>
 			</div>
       <div class="clear"></div>
