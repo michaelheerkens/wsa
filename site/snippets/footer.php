@@ -3,12 +3,11 @@
     <p>
       <a href="index.html" class="mini-logo"><img src="assets/img/logo-footer.png" width="156" height="43" alt="Exa"></a>
     </p>
-    <p>&copy; 2015 Exa Studios Inc. All Rights Reserved.</p>
+    <p>&copy; <?= date("Y") ?> Woonstijladvies. All Rights Reserved.</p>
     <p>
-      <a href="#" class="social-link"><i class="fa fa-behance"></i></a>
-      <a href="#" class="social-link"><i class="fa fa-google-plus"></i></a>
-      <a href="#" class="social-link"><i class="fa fa-dribbble"></i></a>
-      <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/woonstijladvies" class="social-link"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.facebook.com/pages/Woonstijladvies/304331819608845" class="social-link"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/woonstijladvies/" class="social-link"><i class="fa fa-instagram"></i></a>
     </p>
   </div>
 </footer>
