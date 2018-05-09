@@ -5,11 +5,13 @@
         <?php if($item->hasVisibleChildren()): ?>
         <li class="menu-item-has-children<?= r($item->isOpen(), ' current-menu-item') ?>">
           <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+          <?php /*
           <ul>
             <?php foreach($item->children()->visible() as $child): ?>
               <li>  <a href="<?= $child->url() ?>"><?= $child->title()->html() ?></a></li>
             <?php endforeach ?>
-          </ul>
+          </ul>*/
+          ?>
         </li>
       <?php else: ?>
         <li class="<?= r($item->isOpen(), 'current-menu-item') ?>">
