@@ -8,13 +8,11 @@
         <div class="box col-sm-7 col-md-6">
           <div class="thumb featured">
             <div class="photo">
-              <a href="post.html">
                 <?php $coverimage = $page->coverimage()->toFile(); ?>
                 <?php if($coverimage): ?>
                   <img src="<?= $coverimage->url() ?>" width="715" height="715" alt="">
                 <?php  endif ?>
                 <span class="info"><strong class="big-title"><?= $page->header()->html() ?></strong><span class="excerpt"><?= $page->text()->html() ?></span><em class="arrow-right"></em></span>
-              </a>
             </div>
           </div>
         </div>
@@ -78,7 +76,7 @@
               </div>
             </div>
           <?php endif ?>
-          <?php echo "foo" . ($ind % 2) ?>
+
           <?php $ind++ ?>
         <?php endforeach ?>
 
