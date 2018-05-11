@@ -4,6 +4,7 @@ pages:
   template:
     - team
     - aboutdetail
+    - article
   num: zero
 
 files: true
