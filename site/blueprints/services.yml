@@ -1,0 +1,64 @@
+title: Services
+
+files: true
+
+pages:
+  template: article
+  sort: flip
+  num: date
+
+options:
+  template: false
+  status: false
+
+icon: newspaper-o
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+    width: 3/4
+
+  perpage:
+    label: Posts per page
+    type: number
+    min: 1
+    max: 20
+    default: 5
+    width: 1/4
+
+  header:
+    label: Header
+    type: title
+    required: true
+
+  text:
+    label: Text
+    type: textarea
+
+  coverimage:
+    label: Cover Image (715x715)
+    type: image
+    width: 1/2
+
+  advise:
+    label: Advise
+    type: structure
+    fields:
+      title:
+        label: Title
+        type: title
+        required: true
+      link:
+        label: Link
+        type: title
+        required: true
+      image:
+        label: Image (434x434)
+        type: image
+        required: true
+      flipimage:
+        label: Flip image
+        type: checkbox
+        text: yes, flip image
