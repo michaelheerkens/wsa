@@ -5,8 +5,8 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="box white-bg" style="background-image:url(img/sample-inside.png)">
-          <h1><?= $page->title()->kirbytext() ?></h1>
-          <p><?= $page->subtitle()->kirbytext() ?></p>
+          <h1><?= $page->title()->text() ?></h1>
+          <p><?= $page->subtitle()->text() ?></p>
           <p class="small contact-address-info">
             <i class="fa fa-map-marker"></i>
             <?= $page->address()->kirbytext() ?>
@@ -21,8 +21,8 @@
           </p>
         </div>
         <div class="box white-bg text-center">
-          <h5><?= $page->socialmedia_title()->kirbytext() ?></h5>
-          <p><?= $page->socialmedia_subtitle()->kirbytext() ?></p>
+          <h5><?= $page->socialmedia_title()->text() ?></h5>
+          <p><?= $page->socialmedia_subtitle()->text() ?></p>
           <p class="social-share no-bottom">
             <a href="https://twitter.com/woonstijladvies" class="social-link"><i class="fa fa-twitter"></i></a>
             <a href="https://www.facebook.com/pages/Woonstijladvies/304331819608845" class="social-link"><i class="fa fa-facebook"></i></a>
@@ -34,12 +34,12 @@
         <div class="box white-bg text-center">
           <div class="col-md-6">
             <p class="twitter-follow">
-              <a href="<?= $page->socialmedia_pinterestlink()->kirbytext() ?>" class="username"><i class="fa fa-pinterest"></i><?= $page->socialmedia_pinterest()->kirbytext() ?></a>
-              <a href="<?= $page->socialmedia_pinterestlink()->kirbytext() ?>" class="button"><?= $page->socialmedia_followtext()->kirbytext() ?></a>
+              <a href="<?= $page->socialmedia_pinterestlink()->text() ?>" class="username"><i class="fa fa-pinterest"></i><?= $page->socialmedia_pinterest()->text() ?></a>
+              <a href="<?= $page->socialmedia_pinterestlink()->text() ?>" class="button"><?= $page->socialmedia_followtext()->text() ?></a>
             </p>
           </div>
           <div class="col-md-6">
-            <h5 class="twitter-follow-text no-bottom"><?= $page->socialmedia_intro()->kirbytext() ?></h5>
+            <h5 class="twitter-follow-text no-bottom"><?= $page->socialmedia_intro()->text() ?></h5>
           </div>
           <div class="clearfix"></div>
         </div>
