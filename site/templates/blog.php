@@ -10,7 +10,7 @@
               <a href="post.html">
                 <?php $coverimage = $page->coverimage()->toFile(); ?>
                 <?php if($coverimage): ?>
-                  <img src="<?= $coverimage->url() ?>" width="715" height="715" alt="">
+                  <img src="<?= $coverimage->url() ?>" width="715" alt="">
                 <?php  endif ?>
                 <span class="info"><strong class="big-title"><?= $page->header()->html() ?></strong><span class="excerpt"><?= $page->text()->html() ?></span><em class="arrow-right"></em></span>
               </a>
