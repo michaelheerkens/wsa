@@ -39,6 +39,7 @@
         <?php endforeach ?>
       </div>
     </div>
+    <div class="margin-2"></div>
     <div class="row">
 				<div class="col-sm-4">
 					<p><?= $page->text()->kirbytext() ?></p>

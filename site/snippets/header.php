@@ -2,7 +2,7 @@
 <html lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
   <head>
   	<meta charset="utf-8">
-  	<title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+  	<title><?= $page->title()->html() ?> | Woonstijladvies.nl</title>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<meta name="description" content="<?= $site->description()->html() ?>">
