@@ -5,34 +5,28 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="box white-bg" style="background-image:url(img/sample-inside.png)">
-          <h1>Contact Us</h1>
-          <p>Below are some info on how to reach out to us. <br><a href="#">Locate us on Map</a></p>
+          <h1><?= $page->title()->kirbytext() ?></h1>
+          <p><?= $page->subtitle()->kirbytext() ?></p>
           <p class="small contact-address-info">
             <i class="fa fa-map-marker"></i>
-            52 Crash Port<br>
-            New Orleans, CA
+            <?= $page->address()->kirbytext() ?>
           </p>
           <p class="small contact-address-info">
             <i class="fa fa-envelope"></i>
-            hi@exa.com<br>
-            sales@exa.com
+            <?= $page->email()->kirbytext() ?>
           </p>
           <p class="small contact-address-info">
             <i class="fa fa-phone"></i>
-            +1 2345 678 910<br>
-            +1 9876 543 210
+            <?= $page->phone()->kirbytext() ?>
           </p>
         </div>
         <div class="box white-bg text-center">
-          <h5>Connect with us</h5>
-          <p>Follow us, send us your work, share something cool you did in your latest project</p>
+          <h5><?= $page->socialmedia_title()->kirbytext() ?></h5>
+          <p><?= $page->socialmedia_subtitle()->kirbytext() ?></p>
           <p class="social-share no-bottom">
-            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-google-plus"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-dribbble"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-pinterest"></i></a>
-            <a href="#" class="social-link"><i class="fa fa-behance"></i></a>
+            <a href="https://twitter.com/woonstijladvies" class="social-link"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/pages/Woonstijladvies/304331819608845" class="social-link"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/woonstijladvies/" class="social-link"><i class="fa fa-instagram"></i></a>
           </p>
         </div>
       </div>
@@ -40,30 +34,30 @@
         <div class="box white-bg text-center">
           <div class="col-md-6">
             <p class="twitter-follow">
-              <a href="#" class="username"><i class="fa fa-twitter"></i>@exastudios</a>
-              <a href="#" class="button">Follow</a>
+              <a href="<?= $page->socialmedia_pinterestlink()->kirbytext() ?>" class="username"><i class="fa fa-pinterest"></i><?= $page->socialmedia_pinterest()->kirbytext() ?></a>
+              <a href="<?= $page->socialmedia_pinterestlink()->kirbytext() ?>" class="button"><?= $page->socialmedia_followtext()->kirbytext() ?></a>
             </p>
           </div>
           <div class="col-md-6">
-            <h5 class="twitter-follow-text no-bottom">Follow us to catch the latest buzz. Join our 800k+ followers</h5>
+            <h5 class="twitter-follow-text no-bottom"><?= $page->socialmedia_intro()->kirbytext() ?></h5>
           </div>
           <div class="clearfix"></div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="box white-bg">
-          <h5>Send message</h5>
+          <h5>Verstuur bericht</h5>
           <div class="sep red"></div>
           <div class="margin-1"></div>
           <form action="contact1.html" class="no-bottom">
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" class="underline" name="name" id="name" placeholder="Your name..." required>
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" class="underline" name="email" id="email" placeholder="Your email..." required>
-            <label for="message" class="sr-only">Message</label>
-            <textarea class="underline" name="message" id="message" cols="30" rows="6" placeholder="Here goes the message..." required></textarea>
+            <label for="name" class="sr-only">instagram</label>
+            <input type="text" class="underline" name="name" id="name" placeholder="Jouw volledige naam..." required>
+            <label for="email" class="sr-only">E-mail</label>
+            <input type="email" class="underline" name="email" id="email" placeholder="Jouw e-mailadres..." required>
+            <label for="message" class="sr-only">Bericht</label>
+            <textarea class="underline" name="message" id="message" cols="30" rows="6" placeholder="Plaats hier je vraag..." required></textarea>
             <div class="margin-1"></div>
-            <input type="submit" value="Send it">
+            <input type="submit" value="Verstuur nu">
           </form>
         </div>
       </div>

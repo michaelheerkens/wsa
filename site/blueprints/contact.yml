@@ -2,40 +2,41 @@ title: Contact
 
 pages: false
 
-options: 
+options:
   delete: false
   status: false
 
-fields: 
+fields:
   title:
     label: Title
     type: title
-  
-  intro:
-    label: Intro
+  subtitle:
+    label: Subtitle
+    type: title
+  address:
+    label: Address
     type: textarea
-    
-  contactoptions:
-    label: Contact Options
-    type: structure
-    style: table
-    fields:
-      title:
-        label: Title
-        type: text
-      icon:
-        label: Icon
-        type: image
-      text:
-        label: Text
-        type: text
-      url:
-        label: URL
-        type: text
-      linktext:
-        label: Link Text
-        type: text
-  
-  text:
-    label: Text
+  email:
+    label: Email
+    type: textarea
+  phone:
+    label: Phone
+    type: textarea
+  socialmedia_title:
+    label: Socialmedia Title
+    type: title
+  socialmedia_subtitle:
+    label: Socialmedia Subtitle
+    type: title
+  socialmedia_pinterest:
+    label: Socialmedia Pinterest account
+    type: title
+  socialmedia_pinterestlink:
+    label: Socialmedia Pinterest link
+    type: title
+  socialmedia_followtext:
+    label: Socialmedia Follow tekst
+    type: title
+  socialmedia_intro:
+    label: Socialmedia Intro tekst
     type: textarea
