@@ -54,7 +54,7 @@
             $send = false;
             if(isset($post['sendmail']) && $post['sendmail'] == 1) {
             $email = email(array(
-              'to'      => 'michael.heerkens@allblue.nl',
+              'to'      => 'info@woonstijladvies.nl',
               'from'    =>  'michael.heerkens@allblue.nl',
               'subject' => 'Nieuw bericht via woonstijladvies.nl - ' . $post['name'],
               'body'    => "Naam: {$post['name']}\nEmail: {$post['email']}\nBericht: {$post['message']}" ,
