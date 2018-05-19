@@ -2200,10 +2200,6 @@ img.round {
 	margin-left: 0;
 }
 
-.fa-ul li {
-	height: 75px;
-}
-
 .fa-ul .fa-li {
 	top: 1em;
 	margin-top: -0.55em;
@@ -4037,6 +4033,10 @@ img.round {
 
 	.owl-carousel.owl-round-arrows .owl-next {
 		right: 0;
+	}
+
+	.fa-ul li {
+		height: 75px;
 	}
 
 }
