@@ -2200,6 +2200,10 @@ img.round {
 	margin-left: 0;
 }
 
+.fa-ul li {
+	height: 25px;
+}
+
 .fa-ul .fa-li {
 	top: 1em;
 	margin-top: -0.55em;
