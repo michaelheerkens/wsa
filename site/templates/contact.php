@@ -49,7 +49,30 @@
           <h5>Verstuur bericht</h5>
           <div class="sep red"></div>
           <div class="margin-1"></div>
-          <form action="contact1.html" class="no-bottom">
+          <?php
+            $post = kirby()->request()->data();
+            $send = false;
+            if(isset($post['sendmail']) && $post['sendmail'] == 1) {
+            $email = email(array(
+              'to'      => 'michael.heerkens@allblue.nl',
+              'from'    =>  'michael.heerkens@allblue.nl',
+              'subject' => 'Nieuw bericht via woonstijladvies.nl - ' . $post['name'],
+              'body'    => "Naam: {$post['name']}\nEmail: {$post['email']}\nBericht: {$post['message']}" ,
+              'service' => 'postmark',
+              'options' => array(
+                'key' => 'ac89bdf1-7d2e-46ba-a9a7-5b9cb670fb71',
+              )
+            ));
+
+            if($send = $email->send()) {
+              echo 'Bedankt voor je bericht! We nemen snel contact op.';
+            } else {
+              echo $email->error()->message();
+            }
+            }
+          ?>
+          <?php if(!$send):?>
+          <form action="?sendmail=1" method="post" class="no-bottom">
             <label for="name" class="sr-only">instagram</label>
             <input type="text" class="underline" name="name" id="name" placeholder="Jouw volledige naam..." required>
             <label for="email" class="sr-only">E-mail</label>
@@ -59,6 +82,7 @@
             <div class="margin-1"></div>
             <input type="submit" value="Verstuur nu">
           </form>
+        <? endif ?>
         </div>
       </div>
     </div>
