@@ -91,7 +91,7 @@ p {
 	word-wrap: normal;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
-	hyphens: auto;
+	hyphens: manual;
 }
 
 h1,
