@@ -87,8 +87,8 @@ h5,
 h6,
 li,
 p {
-	overflow-wrap: break-word;
-	word-wrap: break-word;
+	overflow-wrap: normal;
+	word-wrap: normal;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
