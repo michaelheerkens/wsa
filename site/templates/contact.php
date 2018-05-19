@@ -82,7 +82,7 @@
             <div class="margin-1"></div>
             <input type="submit" value="Verstuur nu">
           </form>
-        <? endif ?>
+        <?php endif ?>
         </div>
       </div>
     </div>
