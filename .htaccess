@@ -45,6 +45,39 @@ RewriteRule ^(.*) index.php [L]
 
 </IfModule>
 
+Redirect 301 /doe-het-zelf/kleurenplan/effect-van-kleuren/ /doe-het-zelf/effecten-van-kleur
+Redirect 301 /blog/2012/1/16/kleuradvies-woonkamer/ /blog/kleuradvies-woonkamer
+Redirect 301 /blog/2012/2/7/idee%C3%ABn-voor-aan-de-muur/ /blog/ideeen-voor-aan-de-muur
+Redirect 301 /blog/2012/2/20/kleur-voor-jouw-interieur-kiezen/ /blog/een-kleur-voor-jouw-interieur-kiezen
+Redirect 301 /blog/2012/11/29/gezellig-huis/ /blog/gezellige-woning
+Redirect 301 /blog/2012/1/29/een-goed-interieur-is-niet-duur/ /blog/een-mooi-interieur-voor-weinig-geld
+Redirect 301 /blog/2012/1/6/interieur-kleur-kiezen/ /blog/interieurkleur-kiezen
+Redirect 301 /blog/2012/1/7/interieur-kleur-kiezen-2/ /blog/interieurkleur-kiezen-deel-2
+Redirect 301 /blog/2013/1/17/werkplek-in-de-woonkamer/ /blog/werkplek-in-de-woonkamer
+Redirect 301 /blog/2012/4/5/effect-van-een-nieuw-interieur/ /blog/het-effect-van-een-nieuw-interieur
+Redirect 301 /blog/2012/4/5/moderne-tv-wand/ /blog/moderne-tv-wand
+Redirect 301 /blog/2012/1/22/het-succes-van-landelijk-wonen/ /blog/het-succes-van-de-landelijke-woonstijl
+Redirect 301 /blog/2012/11/29/natuurlijk-wonen/ /blog/natuurlijk-wonen
+Redirect 301 /doe-het-zelf/kleurenplan/kleuren-en-licht/ /doe-het-zelf/kleur-en-licht
+Redirect 301 /doe-het-zelf/kleurenplan/kleuren-en-woonstijlen/ /doe-het-zelf/kleuren-en-woonstijlen
+Redirect 301 /doe-het-zelf/kleurenplan/kleuren-combineren/ /doe-het-zelf/kleurencombineren
+Redirect 301 /doe-het-zelf/indeling/symmetrie/ /doe-het-zelf/symmetrie
+Redirect 301 /doe-het-zelf/indeling/indelingsplan/ /doe-het-zelf/indelingsplan
+Redirect 301 /doe-het-zelf/indeling/functies-van-de-ruimte/ /doe-het-zelf/functies-van-de-ruimte
+Redirect 301 /doe-het-zelf/indeling/afmetingen-van-de-meubelen/ /doe-het-zelf/afmetingen-van-de-meubelen
+Redirect 301 /doe-het-zelf/verlichtingsplan/ /doe-het-zelf/verlichting
+Redirect 301 /doe-het-zelf/aankleding-en-accessoires/raambekleding/ /doe-het-zelf/raambekleding-en-zonwering
+Redirect 301 /blog/2013/1/18/wanddecoraties-van-nu/ /doe-het-zelf/wanddecoraties
+Redirect 301 /doe-het-zelf/wanden-en-plafonds/wanden/ /doe-het-zelf/wanden
+Redirect 301 /doe-het-zelf/verkoopstyling/uitstraling/ /doe-het-zelf/verkoop-uitstraling
+Redirect 301 /doe-het-zelf/verkoopstyling/inhoud-en-ruimte/ /doe-het-zelf/inhoud-en-ruimte
+Redirect 301 /doe-het-zelf/verkoopstyling/kleurgebruik/ /doe-het-zelf/verkoopstyling-kleurgebruik
+Redirect 301 /advies/project-voorbeelden/ /projecten
+Redirect 301 /blog/2012/1/21/het-perfecte-interieur-of-de-sfeer-van-vroeger/ /blog/het-perfecte-interieur-of-de-sfeer-van-vroeger
+Redirect 301 /blog/2013/1/5/woonstijladvies-in-het-ad/ /blog/woonstijladvies-in-het-ad
+Redirect 301 /blog/2013/1/24/inspiratie-en-idee%C3%ABn-voor-de-slaapkamer/ /blog/inspiratie-en-ideeen-voor-de-slaapkamer
+Redirect 301 /blog/2012/1/11/licht-en-kleur-in-uw-interieur/ /blog/licht-en-kleur-in-het-interieur
+
 # Additional recommended values
 # Remove comments for those you want to use.
 #
