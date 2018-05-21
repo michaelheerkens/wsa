@@ -12,7 +12,7 @@
       <div class="margin-4"></div>
       <div class="row">
 				<div class="col-md-6">
-					<h4><?= $page->intro()->html() ?></h4>
+					<h3><?= $page->intro()->html() ?></h3>
 					<div class="margin-4"></div>
 				</div>
 				<div class="col-md-6">
