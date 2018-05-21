@@ -4,7 +4,7 @@
   <div class="container container-boxes">
     <div class="row">
       <div class="col-sm-6">
-        <div class="box white-bg" style="background-image:url(img/sample-inside.png)">
+        <div class="box white-bg" style="background-image:url(assets/img/sample-inside.png)">
           <h1><?= $page->title()->text() ?></h1>
           <p><?= $page->subtitle()->text() ?></p>
           <p class="small contact-address-info">
