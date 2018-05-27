@@ -3697,7 +3697,7 @@ img.round {
 		margin-bottom: 60px;
 	}
 
-	.thumb .title {
+	.thumb > .title {
 		display: none;
 		height: 0px;
 		visibility: hidden;
