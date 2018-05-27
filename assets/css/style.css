@@ -145,7 +145,7 @@ h1.error {
 
 h2 {
 	margin-bottom: 0.4em;
-	font-size: 3.75em;
+	font-size: 3.00em;
 	letter-spacing: -1px;
 	line-height: 1.33333333em;
 }
@@ -2576,6 +2576,7 @@ img.round {
 		opacity: 1;
 		max-height: 100rem;
 	}
+
 }
 
 /* 21. Large mobile query (480px) */
