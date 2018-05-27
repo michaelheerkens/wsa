@@ -31,6 +31,7 @@
                   <span class="info"><strong class="title"><?= $item->title()->html() ?></strong><span class="excerpt"><?= $item->text()->html() ?></span><em class="arrow-right"></em></span>
                 </a>
               </div>
+              <strong class="title"><?= $item->title()->html() ?></strong>
             </div>
           </div>
         <?php endif ?>

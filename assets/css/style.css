@@ -1175,6 +1175,8 @@ img.round {
 }
 
 .thumb .info {
+	display: none;
+	visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1184,6 +1186,7 @@ img.round {
 	color: #66757f;
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.85);
+	opacity: 0;
 }
 
 .thumb.dark-overlay .info {
@@ -1259,6 +1262,27 @@ img.round {
 
 .thumb.dark-overlay .info .big-excerpt {
 	color: #fff;
+}
+
+.thumb .info .title, .thumb .title {
+	position: relative;
+	display: block;
+	padding-bottom: 0.75em;
+	margin-bottom: 0.75em;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #000;
+}
+
+.thumb .info .title:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	height: 2px;
+	background-color: #ff2641;
 }
 
 /* 10. Masonry layout */
@@ -2574,6 +2598,11 @@ img.round {
 		max-height: 100rem;
 	}
 
+	.thumb.featured img {
+		max-height: 200px;
+		opacity: 0;
+	}
+
 }
 
 /* 21. Large mobile query (480px) */
@@ -2589,7 +2618,7 @@ img.round {
 
 	.thumb.featured .info .big-title {
 		max-width: 70%;
-		font-size: 4em;
+		font-size: 2.6em;
 	}
 
 	.thumb.featured .info .excerpt {
@@ -3070,7 +3099,6 @@ img.round {
 	.post-box .arrow-icon:after {
 		display: block;
 		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-		visibility: visible;
 	}
 
 	.thumb a:hover .info,
@@ -3078,31 +3106,6 @@ img.round {
 	.post-box .arrow-icon:hover:after {
 		visibility: visible;
 		opacity: 1;
-	}
-
-	.thumb .info .title {
-		position: relative;
-		display: block;
-		padding-bottom: 0.75em;
-		margin-bottom: 0.75em;
-		font-family: 'Roboto', sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		color: #000;
-	}
-
-	.thumb.dark-overlay .info .title {
-		color: #fff;
-	}
-
-	.thumb .info .title:after {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 30px;
-		height: 2px;
-		background-color: #ff2641;
 	}
 
 	.thumb.featured .info .big-title {
@@ -3694,7 +3697,9 @@ img.round {
 		margin-bottom: 60px;
 	}
 
-	.thumb .info {
+	.thumb .title {
+		display: none;
+		height: 0px;
 		visibility: hidden;
 	}
 
