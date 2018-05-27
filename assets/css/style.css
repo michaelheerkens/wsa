@@ -1175,8 +1175,6 @@ img.round {
 }
 
 .thumb .info {
-	display: none;
-	visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1186,7 +1184,6 @@ img.round {
 	color: #66757f;
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.85);
-	opacity: 0;
 }
 
 .thumb.dark-overlay .info {
@@ -3073,6 +3070,7 @@ img.round {
 	.post-box .arrow-icon:after {
 		display: block;
 		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+		visibility: visible;
 	}
 
 	.thumb a:hover .info,
@@ -3694,6 +3692,10 @@ img.round {
 
 	.widget {
 		margin-bottom: 60px;
+	}
+
+	.thumb .info {
+		visibility: hidden;
 	}
 
 }
