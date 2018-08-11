@@ -33,6 +33,14 @@ fields:
     type: title
     required: true
 
+  description:
+    label: Description
+    type:  text
+
+  keywords:
+    label: Keywords
+    type:  text
+    
   text:
     label: Text
     type: textarea

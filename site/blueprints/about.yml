@@ -18,6 +18,14 @@ fields:
     label: Title
     type: title
 
+  description:
+    label: Description
+    type:  text
+
+  keywords:
+    label: Keywords
+    type:  text
+    
   coverimage:
     label: Cover Image (1240x698)
     type: image

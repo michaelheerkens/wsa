@@ -5,14 +5,22 @@ files: false
 pages:
   template: project
 
-options: 
-  template: false  
-  status: false  
-  url: false  
+options:
+  template: false
+  status: false
+  url: false
 
 fields:
   title:
     label: Title
+    type:  text
+
+  description:
+    label: Description
+    type:  text
+
+  keywords:
+    label: Keywords
     type:  text
 
   text:

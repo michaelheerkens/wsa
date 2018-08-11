@@ -16,6 +16,14 @@ fields:
     type:  text
     width: 1/4
 
+  description:
+    label: Description
+    type:  text
+
+  keywords:
+    label: Keywords
+    type:  text
+    
   text:
     label: Text
     type:  textarea

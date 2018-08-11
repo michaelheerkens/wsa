@@ -11,6 +11,14 @@ fields:
     label: Name
     type: title
 
+  description:
+    label: Description
+    type:  text
+
+  keywords:
+    label: Keywords
+    type:  text
+    
   position:
     label: Position
     type: text

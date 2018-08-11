@@ -15,6 +15,14 @@ fields:
     label: Text
     type:  textarea
 
+  description:
+    label: Description
+    type:  text
+
+  keywords:
+    label: Keywords
+    type:  text
+
   blocks:
     label: Homepage blocks
     type: structure
