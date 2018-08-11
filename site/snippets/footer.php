@@ -1,7 +1,7 @@
 <footer id="footer" role="contentinfo">
   <div class="container">
     <p>
-      <a href="index.html" class="mini-logo"><img src="<?= kirby()->urls()->assets()?>/img/logo-footer.png" width="156" height="43" alt="Woonstijladvies"></a>
+      <a href="<?= $site->home()->url() ?>" class="mini-logo"><img src="<?= kirby()->urls()->assets()?>/img/logo-footer.png" width="156" height="43" alt="Woonstijladvies"></a>
     </p>
     <p>&copy; <?= date("Y") ?> Woonstijladvies. All Rights Reserved.</p>
     <p>
