@@ -9,11 +9,11 @@ fields:
 
   description:
     label: Description
-    type:  title
+    type:  text
 
   keywords:
     label: Keywords
-    type:  title
+    type:  text
 
   coverimage:
     label: Cover Image
