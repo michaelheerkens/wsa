@@ -10,9 +10,9 @@ fields:
     type:  text
 
   description:
-    label: Description
+    label: Description (150 - 170 characters)
     type:  textarea
-    
+
   copyright:
     label: Copyright
     type:  textarea

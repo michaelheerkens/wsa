@@ -19,13 +19,13 @@ fields:
     type: title
 
   description:
-    label: Description
+    label: Description (150 - 170 characters)
     type:  text
     validate:
       min: 150
       max: 170
       - alphanum
-      
+
   keywords:
     label: Keywords
     type:  text
