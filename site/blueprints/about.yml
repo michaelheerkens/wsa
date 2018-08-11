@@ -21,11 +21,15 @@ fields:
   description:
     label: Description
     type:  text
-
+    validate:
+      min: 150
+      max: 170
+      - alphanum
+      
   keywords:
     label: Keywords
     type:  text
-    
+
   coverimage:
     label: Cover Image (1240x698)
     type: image
