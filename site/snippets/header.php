@@ -5,8 +5,8 @@
   	<title><?= $page->title()->html() ?> | Woonstijladvies.nl</title>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  	<meta name="description" content="<?= $site->description()->html() ?>">
-    <meta name="keywords" content="">
+  	<meta name="description" content="<?= $page->description()->html() ?>">
+    <meta name="keywords" content="<?= $page->keywords()->html() ?>">
 
   	<link rel="shortcut icon" href="favicon.ico">
   	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic%7CRoboto:400,700%7CDroid+Serif" rel="stylesheet" type="text/css">

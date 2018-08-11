@@ -7,6 +7,14 @@ fields:
     label: Title
     type:  title
 
+  description:
+    label: Description
+    type:  title
+
+  keywords:
+    label: Keywords
+    type:  title
+
   coverimage:
     label: Cover Image
     type: image
