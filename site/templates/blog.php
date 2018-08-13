@@ -17,7 +17,7 @@
         </div>
       <?php
         $ind = 0;
-        $filtered = $page->children()->visible()->filterBy('date', '>', time())->sortBy('date', 'desc');
+        $filtered = $page->children()->visible()->sortBy('date', 'desc');
         foreach($filtered as $article): ?>
         <?php $image = $article->coverimage()->toFile(); ?>
         <?php if($ind===0): ?>
