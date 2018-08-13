@@ -22,7 +22,6 @@ fields:
     validate:
       minLength: 150
       maxLength: 170
-      - alphanum
 
   keywords:
     label: Keywords
