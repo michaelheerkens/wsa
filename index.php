@@ -13,4 +13,5 @@ if(file_exists(__DIR__ . DS . 'site.php')) {
 }
 
 // render
-echo $kirby->launch();
+$response = $kirby->launch();
+if(!$response) { die('error')}

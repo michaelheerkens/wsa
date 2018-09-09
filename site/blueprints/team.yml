@@ -15,9 +15,8 @@ fields:
     label: Description (150 - 170 characters)
     type:  text
     validate:
-      min: 150
-      max: 170
-      - alphanum
+      minLength: 150
+      maxLength: 170
 
   keywords:
     label: Keywords
