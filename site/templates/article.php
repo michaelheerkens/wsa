@@ -9,50 +9,23 @@
         <p><?= $page->text()->kirbytext() ?></p>
           <h5>Andere interessante blogs voor jou</h5>
           <div class="owl-carousel owl-thumbs-2">
-	      <?php if($next = $page->next()): ?>
-		  <?php $image = $next->coverimage()->toFile(); ?>
-                  <div class="thumb dark-overlay">
-                      <div class="photo">
-                          <a href="<?= $next->url() ?>">
+
+
+	      <?php
+	      $siblings = $page->siblings();
+	      foreach($siblings as $sibling): ?>
+              <div class="thumb dark-overlay">
+                  <div class="photo">
+                      <a href="<?= $sibling->url() ?>">
+			  <?php if($image = $sibling->coverimage()->toFile()): ?>
                               <img src="<?= $image->url() ?>" alt="" width="434" height="434">
-                              <span class="info"><span class="big-excerpt"><?= $next->title()->html() ?></span></span>
-                          </a>
-                      </div>
+			  <?php endif ?>
+                          <span class="info"><span class="big-excerpt"><?= $sibling->title()->html() ?></span></span>
+                      </a>
                   </div>
-	      <?php endif ?>
-	      <?php if($next = $next->next()): ?>
-		  <?php $image = $next->coverimage()->toFile(); ?>
-                  <div class="thumb dark-overlay">
-                      <div class="photo">
-                          <a href="<?= $next->url() ?>">
-                              <img src="<?= $image->url() ?>" alt="" width="434" height="434">
-                              <span class="info"><span class="big-excerpt"><?= $next->title()->html() ?></span></span>
-                          </a>
-                      </div>
-                  </div>
-	      <?php endif ?>
-	      <?php if($previous = $page->prev()): ?>
-		  <?php $image = $previous->coverimage()->toFile(); ?>
-                  <div class="thumb dark-overlay">
-                      <div class="photo">
-                          <a href="<?= $previous->url() ?>">
-                              <img src="<?= $image->url() ?>" alt="" width="434" height="434">
-                              <span class="info"><span class="big-excerpt"><?= $previous->title()->html() ?></span></span>
-                          </a>
-                      </div>
-                  </div>
-	      <?php endif ?>
-	      <?php if($previous = $previous->prev()): ?>
-		  <?php $image = $previous->coverimage()->toFile(); ?>
-                  <div class="thumb dark-overlay">
-                      <div class="photo">
-                          <a href="<?= $previous->url() ?>">
-                              <img src="<?= $image->url() ?>" alt="" width="434" height="434">
-                              <span class="info"><span class="big-excerpt"><?= $previous->title()->html() ?></span></span>
-                          </a>
-                      </div>
-                  </div>
-	      <?php endif ?>
+              </div>
+	      <?php endforeach ?>
+
           </div>
           <div class="margin-5"></div>
           <div id="disqus_thread"></div>
