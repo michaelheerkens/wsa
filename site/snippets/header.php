@@ -8,7 +8,7 @@
   	<meta name="description" content="<?= $page->description()->html() ?>">
     <meta name="keywords" content="<?= $page->keywords()->html() ?>">
 
-  	<link rel="shortcut icon" href="favicon.ico">
+  	<link rel="shortcut icon" href="<?= $site->home()->url() ?>/assets/img/favicon.ico">
   	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic%7CRoboto:400,700%7CDroid+Serif" rel="stylesheet" type="text/css">
     <?= css('assets/css/font-awesome.min.css') ?>
     <?= css('assets/css/style.css') ?>
@@ -25,6 +25,7 @@
     })();
 
   </script>
+      <?= js('assets/js/jquery.min.js') ?>
   </head>
   <body>
 
