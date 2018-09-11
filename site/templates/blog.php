@@ -18,6 +18,9 @@
       <?php
         $ind = 0;
         $filtered = $page->children()->visible()->filterBy('date', '<=', time())->sortBy('date', 'desc');
+          if($tag = param('tag')) {
+	      $filtered = $filtered->filterBy('tags', $tag, '/');
+          }
         foreach($filtered as $article): ?>
         <?php $image = $article->coverimage()->toFile(); ?>
         <?php if($ind===0): ?>
