@@ -7,6 +7,17 @@
         <h1 class="single-title no-bottom"><?= $page->title()->html() ?></h1>
         <p class="post-meta"><span>door <a href="#">Nicole</a></span></p>
         <p><?= $page->text()->kirbytext() ?></p>
+          <?php if($tags = $page->tags()):?>
+
+                  <p class="tags">
+	       <?php foreach($tags->split('/') as $tag):?>
+                  <a href="<?= $page->parent()->url() ?>/tag:<?= $tag?>">
+		            <?= $tag; ?>
+                  </a>
+
+	      <?php endforeach ?>
+                  </p>
+	        <?php endif ?>
           <h5>Andere interessante blogs voor jou</h5>
           <div class="owl-carousel owl-thumbs-2">
 
