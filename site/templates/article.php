@@ -12,7 +12,7 @@
 
 
 	      <?php
-	      $siblings = $page->siblings();
+	      $siblings = $page->siblings(false)->visible()->filterBy('date', '<', strtotime($page->date('Y-m-d')))->sortBy('date', 'desc');;
 	      foreach($siblings as $sibling): ?>
               <div class="thumb dark-overlay">
                   <div class="photo">
