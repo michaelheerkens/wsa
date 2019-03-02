@@ -26,6 +26,28 @@
 
   </script>
       <?= js('assets/js/jquery.min.js') ?>
+    
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "message": "Om je beter en persoonlijker te helpen, gebruiken wij cookies en vergelijkbare technieken. Met de cookies volgen wij en derde partijen jouw internetgedrag binnen onze site.  Als je verdergaat op onze website gaan we ervan uit dat je dat goedvindt. Meer weten? ",
+    "dismiss": "OK!",
+    "link": "Bekijk onze cookiepagina"
+  }
+})});
+</script>
+    
   </head>
   <body>
 
