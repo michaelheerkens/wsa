@@ -43,9 +43,9 @@ window.cookieconsent.initialise({
   "position": "top",
   "static": true,
   "content": {
-    "message": "Deze website maakt gebruik van cookies. Door gebruik te maken van de website geef je aan hiermee akkoord te zijn. Meer weten?",
+    "message": "Deze website maakt gebruik van cookies. Door gebruik te maken van de website geef je aan hiermee akkoord te zijn.",
     "dismiss": "OK!",
-    "link": "Bekijk onze cookiepagina"
+    "link": "Meer info"
   }
 })});
 </script>
