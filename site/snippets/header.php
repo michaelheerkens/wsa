@@ -43,7 +43,7 @@ window.cookieconsent.initialise({
   "position": "top",
   "static": true,
   "content": {
-    "message": "Om je beter en persoonlijker te helpen, gebruiken wij cookies en vergelijkbare technieken. Met de cookies volgen wij en derde partijen jouw internetgedrag binnen onze site.  Als je verdergaat op onze website gaan we ervan uit dat je daarmee akkoord gaat. Meer weten? ",
+    "message": "Deze website maakt gebruik van cookies om ervoor te zorgen dat je de beste ervaring krijgt. Als je verdergaat gaan we ervan uit dat je daarmee akkoord bent. Meer weten?",
     "dismiss": "OK!",
     "link": "Bekijk onze cookiepagina"
   }
