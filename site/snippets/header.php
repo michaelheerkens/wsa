@@ -26,6 +26,7 @@
 
   </script>
       <?= js('assets/js/jquery.min.js') ?>
+   
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 <script>
@@ -39,6 +40,8 @@ window.cookieconsent.initialise({
       "background": "#ff2641"
     }
   },
+  "position": "top",
+  "static": true,
   "content": {
     "message": "Om je beter en persoonlijker te helpen, gebruiken wij cookies en vergelijkbare technieken. Met de cookies volgen wij en derde partijen jouw internetgedrag binnen onze site.  Als je verdergaat op onze website gaan we ervan uit dat je dat goedvindt. Meer weten? ",
     "dismiss": "OK!",
