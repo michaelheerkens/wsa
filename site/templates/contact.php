@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <main id="content" role="main">
   <div class="container container-boxes">
     <div class="row">
@@ -52,27 +52,43 @@
           <?php
             $post = kirby()->request()->data();
             $send = false;
-            if(isset($post['sendmail']) && $post['sendmail'] == 1) {
-            $email = email(array(
-              'to'      => 'info@woonstijladvies.nl',
-              'from'    =>  'michael.heerkens@allblue.nl',
-              'subject' => 'Nieuw bericht via woonstijladvies.nl - ' . $post['name'],
-              'body'    => "Naam: {$post['name']}\nEmail: {$post['email']}\nBericht: {$post['message']}" ,
-              'service' => 'postmark',
-              'options' => array(
-                'key' => 'ac89bdf1-7d2e-46ba-a9a7-5b9cb670fb71',
-              )
-            ));
+            if($post){
 
-            if($send = $email->send()) {
-              echo 'Bedankt voor je bericht! We nemen snel contact op.';
-            } else {
-              echo $email->error()->message();
-            }
+              $data = array(
+                'secret' => "6LeyjNwZAAAAAGr9xeawZbLTT74f_DsjTGwlG8qT",
+                'response' => $post['g-recaptcha-response']
+              );
+
+              $verify = curl_init();
+              curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+              curl_setopt($verify, CURLOPT_POST, true);
+              curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+              curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+              curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+              $response = json_decode(curl_exec($verify), true);
+
+              if(isset($post['sendmail']) && $post['sendmail'] == 1 && $response['success'] === true) {
+                $email = email(array(
+                  'to'      => 'info@woonstijladvies.nl',
+                  'from'    =>  'michael.heerkens@allblue.nl',
+                  'subject' => 'Nieuw bericht via woonstijladvies.nl - ' . $post['name'],
+                  'body'    => "Naam: {$post['name']}\nEmail: {$post['email']}\nBericht: {$post['message']}" ,
+                  'service' => 'postmark',
+                  'options' => array(
+                    'key' => 'ac89bdf1-7d2e-46ba-a9a7-5b9cb670fb71',
+                  )
+                ));
+
+                if($send = $email->send()) {
+                  echo 'Bedankt voor je bericht! We nemen snel contact op.';
+                } else {
+                  echo $email->error()->message();
+                }
+              }
             }
           ?>
           <?php if(!$send):?>
-          <form action="?sendmail=1" method="post" class="no-bottom">
+          <form action="?sendmail=1" method="post" class="no-bottom" id="contactform">
             <label for="name" class="sr-only">instagram</label>
             <input type="text" class="underline" name="name" id="name" placeholder="Jouw volledige naam..." required>
             <label for="email" class="sr-only">E-mail</label>
@@ -80,7 +96,7 @@
             <label for="message" class="sr-only">Bericht</label>
             <textarea class="underline" name="message" id="message" cols="30" rows="6" placeholder="Plaats hier je vraag..." required></textarea>
             <div class="margin-1"></div>
-            <input type="submit" value="Verstuur nu">
+            <button class="g-recaptcha" data-sitekey="6LeyjNwZAAAAANyl3mLxU42NhzlSSEdR_dK148JL" data-callback='onSubmit' data-action='submit'>Verstuur nu</button>
           </form>
         <?php endif ?>
         </div>
@@ -88,5 +104,9 @@
     </div>
   </div>
 </main>
-
+<script>
+   function onSubmit(token) {
+     document.getElementById("contactform").submit();
+   }
+ </script>
 <?php snippet('footer') ?>
