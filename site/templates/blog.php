@@ -32,7 +32,7 @@
                 <?php  endif ?>
               </a>
               <div class="extra-info">
-                <p class="meta small"><?= $article->date('d M Y') ?> door <a href="#">Nicole</a></p>
+                <p class="meta small"><door <a href="#">Nicole</a></p>
                 <h5><a href="<?= $article->url() ?>"><?= $article->title()->html() ?></a></h5>
               </div>
             </div>
@@ -41,7 +41,7 @@
           <div class="box col-sm-6 col-md-3">
             <div class="post-box vertical clearfix">
               <div class="extra-info">
-                <p class="meta small"><?= $article->date('d M Y') ?> door <a href="#">Nicole</a></p>
+                <p class="meta small">door <a href="#">Nicole</a></p>
               </div>
               <a href="<?= $article->url() ?>" class="image-link arrow-icon dark-overlay">
                 <?if($image): ?>
@@ -59,7 +59,7 @@
                 <? endif ?>
               </a>
               <div class="extra-info">
-                <p class="meta small"><?= $article->date('d M Y') ?> door <a href="#">Nicole</a></p>
+                <p class="meta small">door <a href="#">Nicole</a></p>
                 <h5><a href="<?= $article->url() ?>"><?= $article->title()->html() ?></a></h5>
               </div>
             </div>
